@@ -1,3 +1,6 @@
+import sqlite3
+
+
 class Article:
     def __init__(self, id, title, content, author_id, magazine_id):
         self.id = id
@@ -8,3 +11,9 @@ class Article:
 
     def __repr__(self):
         return f'<Article {self.title}>'
+    
+
+    def create_article(self):  
+        conn = sqlite3.connect('magazine.db')
+
+    

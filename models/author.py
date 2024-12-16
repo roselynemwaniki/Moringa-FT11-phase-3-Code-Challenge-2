@@ -1,3 +1,5 @@
+import sqlite3
+
 class Author:
     def __init__(self, id, name):
         self.id = id
@@ -5,3 +7,5 @@ class Author:
 
     def __repr__(self):
         return f'<Author {self.name}>'
+
+        

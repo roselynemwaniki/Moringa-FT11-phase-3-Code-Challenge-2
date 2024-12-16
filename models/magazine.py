@@ -1,3 +1,5 @@
+import sqlite3
+
 class Magazine:
     def __init__(self, id, name, category):
         self.id = id
@@ -6,3 +8,6 @@ class Magazine:
 
     def __repr__(self):
         return f'<Magazine {self.name}>'
+    
+
+    
